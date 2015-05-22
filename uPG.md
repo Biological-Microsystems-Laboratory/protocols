@@ -9,15 +9,15 @@ quick protocol overview
 
 CAD design
 ---
-The design must have no overlapping lines. The best way to check for this is to make sure that everything is joins properly. You can also select and delete parts of the design to see if any stray lines are hidden under your design.
+The design must have no overlapping lines. The best way to check for this is to make sure that everything joins properly. You can also select and delete parts of the design to see if any stray lines are hidden under your design.
 
-You do not want to have any borders or outlines that are a single line. The uPG will print everything starting at the out most line.
+You do not want to have any borders or outlines that are a single line (such as wafer boundries). The uPG will print everything starting at the outmost line.
 
 Center your design. The X-Y origin should be the center of your design.
 
 Conversion with LinkCAD
 ----
-The uPG software cannot see features within features. It exposes everything inside the outermost line. LinkCad tricks the uPG into printing features within features by cleverly cutting design into smaller separate parts. 
+The uPG software cannot see features within features. It exposes everything inside the outermost line. LinkCad tricks the uPG into printing features within features by cleverly cutting design into smaller separate adjacent parts. 
 
 1. Save your design as a dxf formatted file.  
 2. Open linkCad. Leave the import and export formats as DXF. Note: dxf format has no scale information so it asks you to enter it. Give it whatever scale you are using in your dwg file. Typically 1 unit = 1 mm. Scale 1 times. Set the exports units the same.
@@ -33,7 +33,7 @@ The uPG software cannot see features within features. It exposes everything insi
 Converting Designs with Arrays
 ---
 
-If you design includes any array it is usually to complex for the De-embed polygon option. For arrays you will add it as a second file during the conversion process.
+If you design includes any array it is usually to complex for the De-embed polygon function. For arrays you will add it as a second file during the conversion process.
 
 1. Save the array separately from the main design. You must insure that the array lines up with the main design. The easiest way to do this is to create the whole design with the array and save as two different files. Then delete the array in one file, and everything but the array in the second file.
 2. Proceed as above with the main file. After you De-Embed polygons you will add the array.

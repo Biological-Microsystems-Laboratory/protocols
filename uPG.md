@@ -1,4 +1,4 @@
-quick protocol overview
+Quick Protocol Overview
 ----
 
 1. Export complete, joined design to dxf file
@@ -36,32 +36,31 @@ Converting Designs with Arrays
 If you design includes any array it is usually to complex for the De-embed polygon function. For arrays you will add it as a second file during the conversion process.
 
 1. Save the array separately from the main design. You must insure that the array lines up with the main design. The easiest way to do this is to create the whole design with the array and save as two different files. Then delete the array in one file, and everything but the array in the second file.
-2. Proceed as above with the main file. After you De-Embed polygons you will add the array.
-3. Go to Tools > Boolean Operations on Files.
-4. Select the array as "File (B)". The select A minus B (subtract). Leave Explode cells checked. The precision can be 10 nm or lower.
-5. Your array should be successfully cut out from the design. 
-6. If your array contains a large number of elements the preview may freeze when you try to zoom in to check. You can check a small portion by zooming in away from the array and then panning over to it. You should see the array elements in white (if they are intended to be pillars) and cuts going out.
+1. Proceed as above with the main file. After you De-Embed polygons you will add the array.
+1. Go to Tools > Boolean Operations on Files.
+1. Select the array as "File (B)". The select A minus B (subtract). Leave Explode cells checked. The precision can be 10 nm or lower.
+1. Your array should be successfully cut out from the design. 
+1. If your array contains a large number of elements the preview may freeze when you try to zoom in to check. You can check a small portion by zooming in away from the array and then panning over to it. You should see the array elements in white (if they are intended to be pillars) and cuts going out.
 
 Setting up the uPG for exposure
 ----
 You will want to have a wafer ready with SU-8 softbakeing.
 
-1. turn on the compressor and vacuum pump.
-2. Start the exposure wizard.
-3. Start the uPG exposure wizard software and load the design. If you used 1 unit = 1 mm in the LinkCAD conversion then you want to scale by 1000000.
-4. The preview is useless. Don't worry if there is a large black filled in part. What is important to check is the overall design dimensions. This is the actual size that it will print as. Compare them to your design. If they are off something was scaled wrong. Also check the centering. A few microns off is OK but if there is a significant offset it may print off the wafer.
-5. Click show control panel and click 'To Load' in the resulting window. 
-6. Get your wafer ready by using a razor to scrape off any SU-8 from the bottom or moist a kimwipes with acetone and clean the bottom and then blowing off any debris.
-7. Use the aligning pins to center the wafer on the stage and turn on the vacuum with the blue switch.
-8. Remove the aligning pins and click 'To Center'. Next click focus.
-9. Exposure settings depend on the thickness of your SU-8. The highest energy for one pass is 18 MW at 97% strength and 4X time. If your SU-8 is 20 micrometer one pass at these settings should be good. For small features (<15um), unidirectional mode should have a check mark. If you design is taller or shorter you will need to run multiple passes or increase the speed (3x 2x or 1x) or decrease exposure energy. You can tell if your design is over exposed if the surface of the cured SU-8 has a cracked appearance. SU-8 under 20 micrometers also has a good chance of pealing away when it is developed. One solution for this is to spin a cure a thin layer of SU-8 on the wafer before the design layer. This helps the design layer adhere.
-10. Expose X number of times (use team-viewer to run again remotely).
+1. Turn on the compressor and vacuum pump.
+1. Start the uPG exposure wizard software and load the design. If you used 1 unit = 1 mm in the LinkCAD conversion then you want to scale by 1000000.
+1. The preview is useless. Don't worry if there is a large black filled in part. What is important to check is the overall design dimensions. This is the actual size that it will print as. Compare them to your design. If they are off something was scaled wrong. Also check the centering. A few microns off is OK but if there is a significant offset it may print off the wafer.
+1. Click show control panel and click 'To Load' in the resulting window. 
+1. Get your wafer ready by using a razor to scrape off any SU-8 from the bottom or use a moist kimwipe with acetone and clean the bottom and then blowing off any debris.
+1. Use the aligning pins to center the wafer on the stage and turn on the vacuum with the blue switch.
+1. Remove the aligning pins and click 'To Center'. Next click focus.
+1. Exposure settings depend on the thickness of your SU-8. The highest energy for one pass is 18 MW at 97% strength and 4X time. If your SU-8 is 20 micrometer one pass at these settings should be good. For small features (<15um), unidirectional mode should have a check mark. If you design is taller or shorter you will need to run multiple passes or increase the speed (3x 2x or 1x) or decrease exposure energy. You can tell if your design is over exposed if the surface of the cured SU-8 has a cracked appearance. SU-8 under 20 micrometers also has a good chance of pealing away when it is developed. One solution for this is to spin and cure a thin layer of SU-8 on the wafer before the design layer. This helps the design layer adhere.
+1. Expose X number of times (use team-viewer to run again remotely).
 
 Multi-Layer Masters
 -----
 1. expose the first layer as above, align the wafer with the pins in a way that you can place it again on the stage in approximately the same way. Usually you can place the of the corners of straight edges at a pin.
-2. Complementary alignment marks must be added to each layer of the design.
-3. Use the advanced alignment with the exposure wizard.
+1. Complementary alignment marks must be added to each layer of the design.
+1. Use the advanced alignment with the exposure wizard.
 
 
 

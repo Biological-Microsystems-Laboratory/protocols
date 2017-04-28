@@ -20,7 +20,9 @@ The uPG passes over the entire area of the design regardless of whether there ar
 For example, B M L takes more time the BML, but both of these examples would take at least 3 times more write time as:
 
 B
+
 M
+
 Ｌ
 
 Conversion with LinkCAD
